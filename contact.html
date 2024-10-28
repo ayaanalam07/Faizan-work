@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="icon" href="./assets/logo 2.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="manifest" href="./assets/logo 2.png" />
+    <title>Eye Conic</title>
+</head>
+
+<body>
+
+    <!-- Navbar section start -->
+    <div class="navbar" style="background-color:#2D2B28;">
+        <div class="flex-1 flex items-center justify-between">
+            <img class="w-24 ml-10" src="./assets/logo 2.png" alt="no-image">
+            <div class="ml-[20rem] hidden md:block">
+                <ul class="text-white flex justify-center gap-[3rem] flex-wrap">
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./about.html">
+                        <li>About</li>
+                    </a>
+                    <a href="./product.html">
+                        <li>Product</li>
+                    </a>
+                    <a href="./contact.html">
+                        <li>Contact Us</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="flex-none gap-2 mr-[1rem] hidden md:block">
+                <div class="form-control">
+                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                </div>
+            </div>
+            <button class="hamburger md:hidden flex items-center px-4" onclick="toggleMenu()">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="text-white flex flex-col items-center gap-4 mt-4">
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./about.html">
+                    <li>About</li>
+                </a>
+                <a href="./product.html">
+                    <li>Product</li>
+                </a>
+                <a href="./contact.html">
+                    <li>Contact Us</li>
+                </a>
+                <li>
+                    <div class="form-control mt-2">
+                        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Navbar section end -->
+
+
+    <!-- map image section started -->
+    <div class="flex justify-center mt-[3rem] mb-[3rem]">
+        <img src="./assets/map.png" alt="Map">
+    </div>
+    <!-- map image section started -->
+
+<!-- input feed section started -->
+<h1 class="text-3xl font-extrabold italic text-center">Fill up the form</h1>
+
+<div class="flex justify-center flex-wrap gap-[2rem] mt-5">
+    <input class="p-3 px-[3rem] bg-base-300" type="text" placeholder="Name" />
+    <input class="p-3 px-[3rem] bg-base-300" type="text" placeholder="Email Address" />
+</div>
+<div class="flex justify-center flex-wrap gap-[2rem] mt-2">
+    <textarea class="px-[15.5rem] py-[6rem]  bg-base-300" placeholder="Message"></textarea>
+</div>
+
+<div class="flex justify-center flex-wrap gap-[20rem] mt-[1rem]">
+    <div>
+        <p>I certify I completely read and I accept the <br /> privacy policy and terms and conditions <br />(links underneath) by validating this form</p>
+        <input class="mt-5 bg-base-300" type="checkbox"><span class="m-2">Accept</span>
+
+    </div>
+    <div>
+        <button class="py-2 px-3.5 bg-base-300">Submit</button>
+    </div>
+</div>
+ <!-- input feed section ended -->
+
+<!-- paragraph section started -->
+<p class="ml-[24.5rem] mt-3 mb-[3rem]">Here you can find our <a class="underline" href="#"> Privacy Policy </a> and <a class="underline" href="#">Terms & Conditions</a> </p>
+<!-- paragraph section started -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section start -->
+    <footer style="background: #2D2B28;" class="footer text-white p-10">
+        <div>
+            <img src="./assets/logo 2.png" alt="logo">
+            <h1 style="color: #B4A4EC;" class="text-2xl font-extrabold">ESTYLEHUB</h1>
+            <p>We produce best quality acrylic eyes of natural looking <br /> iris, soft pupil, real size and real
+                colour, 20 years of <br /> experience got us to perfection.</p>
+        </div>
+        <div>
+            <h1 style="color: #E48484;" class="text-xl mt-[1rem]">Contact Information</h1>
+            <h1>Aptech Learning Sharah e faisal</h1>
+            <h1>Email: <span>Eyeconicstore@gmail.com</span></h1>
+            <h1>Phone: <span>+35799126077</span></h1>
+        </div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- empty div for gap  -->
+    <div style=" height: 66px; background: #413636;">
+    </div>
+    <!-- empty div for gap  -->
+
+    <!-- second footer start -->
+    <footer style="background: #2D2B28; color: white;" class="footer footer-center bg-base-300 text-base-content p-4">
+        <aside>
+            <p>EyeconicStore.com © All Rights Reserved. Designed by Ofion Themes | Shopping Cart solutions by Shopping
+                Cart Malta</p>
+        </aside>
+    </footer>
+    <!-- second footer end -->
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
